@@ -1,0 +1,13 @@
+
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <div class="our-div-attr" appAttrDirective [condition]="change" (emitter)="onEmit($event)">we are here attr</div>
+  <!-- <ng-template ngIf [ngIf]="condition"></ng-template> -->
+  <div class="our-div-str" *appStrDirective="false">we are here str</div>
+  <!-- <div class="our-div-ng-model" [(ngModel)]="name" [ngModel]="name" (ngModelChange)="name = $event">we are here str</div> -->
+  <div class="our-div-class-bind" [class.red-color]="true" [class.background-color]="true">we are here class bind</div>
+  <table>
+    <td colspan="5" [attr.colspan]="cols"></td>
+  </table>
+</div>
