@@ -1,0 +1,11 @@
+h5 {
+  color: red;
+}
+
+.name::ng-deep h5 {
+ color: blueviolet;
+}
+
+app-child h5 {
+
+}

@@ -1,0 +1,13 @@
+<p>child works!</p>
+
+<div class="container">
+  <div class="nothing"><ng-content></ng-content></div>
+  <div class="title"><ng-content select="[title]"></ng-content></div>
+  <div class="description"><ng-content select="[description]"></ng-content></div>
+</div>
+
+<ng-container *ngFor="let item of [].constructor(5); let i = index">
+  <ng-container [ngTemplateOutlet]="tempCard" [ngTemplateOutletContext]="{index: i}">
+
+  </ng-container>
+</ng-container>

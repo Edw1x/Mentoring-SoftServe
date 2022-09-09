@@ -1,0 +1,22 @@
+<div class="container"></div>
+<ng-template #name>This is name</ng-template>
+
+<ng-container #container></ng-container>
+
+<app-child>
+  <div> this is nothing</div>
+  <div class="title" title>this is title</div>
+  <div class="description" description>this is description</div>
+
+  <ng-template #myTemplate>
+    <div class="description" description>my Template</div>
+  </ng-template>
+
+  <ng-template #myTemplateCard let-index="index">
+    <app-card [title]="title" [index]="index"></app-card>
+  </ng-template>
+
+
+</app-child>
+
+

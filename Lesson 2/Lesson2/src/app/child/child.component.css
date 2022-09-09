@@ -1,0 +1,17 @@
+h5 {
+  color: blue;
+}
+
+
+:host {
+  padding: 20px;
+  display: block;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+
+:host-context(.name) h5 {
+  color: green;
+}
