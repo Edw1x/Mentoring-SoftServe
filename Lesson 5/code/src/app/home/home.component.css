@@ -1,0 +1,13 @@
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li:hover {
+  color: black;
+}

@@ -1,0 +1,10 @@
+<mat-toolbar color="accent">
+  <mat-toolbar-row>
+    <nav>
+      <li [routerLink]="['child-one', 10]" [queryParams]="{order: 2}" queryParamsHandling="merge" [state]="{age: randInt}">Child one</li>
+      <li (click)="onClick()">Child one on click</li>
+      <li [routerLink]="['child-two']">Child two</li>
+    </nav>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

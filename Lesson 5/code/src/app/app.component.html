@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <nav>
+      <li [routerLink]="['home']" [routerLinkActive]="['class1', 'class2']">Home</li>
+      <li [routerLink]="['about']">About</li>
+      <li [routerLink]="['lazy']">Lazy</li>
+    </nav>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
+<!-- <a (click)="onMoveToDiv2()">scroll to diw2</a>
+<a (click)="onMoveToDiv2Temp(anchorTemp)">scroll to diw2 temp</a>
+<div></div>
+<div class="di2" id="anchor" #anchorTemp></div> -->

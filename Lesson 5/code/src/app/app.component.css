@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li:hover {
+  color: black;
+}
+
+
+.class1 {
+  color: black
+}
+
+.class2 {
+  background-color: green;
+}
+
+
+div {
+  height: 2000px;
+  background-color: black;
+}
+
+.di2 {
+  background-color: aqua;
+}
